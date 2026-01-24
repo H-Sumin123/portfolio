@@ -53,7 +53,8 @@ body {
 }
 
 #wrap {
-    min-width: 1360px;
+    /* min-width: 100%; */
+    width: 100%;
     overflow: hidden;
 }
 
@@ -79,6 +80,13 @@ header {
     display: none;
 }
 
+/* 공통 컨테이너 설정: 1920px일 때의 모습(내부 약 1320px)을 유지하며 중앙 정렬 */
+.container {
+    width: 1320px; /* 1920px 화면 기준 작업하신 내부 너비 */
+    margin: 0 auto;
+    position: relative;
+}
+
 #section1 {
     width: 100%;
     height: 800px;
@@ -86,7 +94,7 @@ header {
 }
 
 #section1 .container {
-    width: 1320px;
+    width: 1220px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -96,11 +104,10 @@ header {
 
 #section1 .img_wrap {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 #section1 .text_wrap {
-    padding-right: 81px;
     text-align: center;
 }
 
