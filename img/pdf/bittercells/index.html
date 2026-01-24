@@ -25,7 +25,10 @@
             </h1>
         </header>
         <div id="banner">
-            <video src="./img/video/bittercells.mp4" autoplay muted loop playsinline></video>
+            <!-- pc 비디오 -->
+            <video src="./img/video/bittercells.mp4" autoplay muted loop playsinline class="video_pc"></video>
+            <!-- mobile 비디오 -->
+             <video src="./img/video/bittercells_m.mp4" autoplay muted loop playsinline class="video_m"></video>
         </div><!-- #banner -->
         <div id="section1">
             <div class="container">
@@ -55,16 +58,18 @@
                     data-aos-duration="800" data-aos-delay="100">
                 <img src="./img/section2_3.png" alt="winter look" class="pos img3" data-aos="fade-left"
                     data-aos-duration="800" data-aos-delay="200">
-                <img src="./img/section2_4.png" alt="winter look" class="pos img4" data-aos="zoom-in"
-                    data-aos-duration="1000">
-                <img src="./img/section2_5.png" alt="winter look" class="pos img5" data-aos="zoom-in"
-                    data-aos-duration="1000" data-aos-delay="100">
-                <img src="./img/section2_6.png" alt="winter look" class="pos img6" data-aos="fade-up"
-                    data-aos-duration="800" data-aos-delay="200">
-                <img src="./img/section2_7.png" alt="winter look" class="pos img7" data-aos="fade-right"
-                    data-aos-duration="800" data-aos-delay="300">
-                <img src="./img/section2_8.png" alt="winter look" class="pos img8" data-aos="fade-up"
-                    data-aos-duration="800" data-aos-delay="400">
+                <div class="img_wrap2">
+                    <img src="./img/section2_4.png" alt="winter look" class="pos img4" data-aos="zoom-in"
+                        data-aos-duration="1000">
+                    <img src="./img/section2_5.png" alt="winter look" class="pos img5" data-aos="zoom-in"
+                        data-aos-duration="1000" data-aos-delay="100">
+                    <img src="./img/section2_6.png" alt="winter look" class="pos img6" data-aos="fade-up"
+                        data-aos-duration="800" data-aos-delay="200">
+                    <img src="./img/section2_7.png" alt="winter look" class="pos img7" data-aos="fade-right"
+                        data-aos-duration="800" data-aos-delay="300">
+                    <img src="./img/section2_8.png" alt="winter look" class="pos img8" data-aos="fade-up"
+                        data-aos-duration="800" data-aos-delay="400">
+                </div>
 
                 <!-- 텍스트 -->
                 <p class="pos txt1" data-aos="fade-left" data-aos-duration="800">“차분한 컬러와 포근한 소재로 완성한 겨울 컬렉션”</p>
@@ -85,27 +90,23 @@
         <div id="section3">
             <img src="./img/section3_1.jpg" alt="winter collection" class="pos img1" data-aos="fade-right"
                 data-aos-duration="1000">
+            <p class="pos txt txt1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Hood Check Light
+                Puffer Jacket</p>
+            <p class="pos price price1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">₩139,000</p>
             <img src="./img/section3_2.jpg" alt="winter collection" class="pos img2" data-aos="zoom-in-up"
                 data-aos-duration="1000" data-aos-delay="100">
+            <p class="pos txt txt2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">Tiny Knit Leg
+                Warmer</p>
+            <p class="pos price price2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">₩49,000</p>
             <img src="./img/section3_3.jpg" alt="winter collection" class="pos img3" data-aos="fade-left"
                 data-aos-duration="1000" data-aos-delay="200">
+            <p class="pos txt txt3" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">Curly Collar Fur
+                Jacket</p>
+            <p class="pos price price3" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">₩169,000</p>
             <img src="./img/section3_p1.svg" alt="bittercells" class="pos img4" data-aos="fade-left"
                 data-aos-duration="1000">
             <img src="./img/section3_p2.svg" alt="bittercells" class="pos img5" data-aos="fade-right"
                 data-aos-duration="1000">
-
-            <!-- txt -->
-            <p class="pos txt txt1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Hood Check Light
-                Puffer Jacket</p>
-            <p class="pos txt txt2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">Tiny Knit Leg
-                Warmer</p>
-            <p class="pos txt txt3" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">Curly Collar Fur
-                Jacket</p>
-
-            <!-- price -->
-            <p class="pos price price1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">₩139,000</p>
-            <p class="pos price price2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">₩49,000</p>
-            <p class="pos price price3" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">₩169,000</p>
         </div><!-- #section3 -->
 
         <div id="section4">
@@ -127,8 +128,9 @@
             </div>
             <div class="img3">
                 <a href="#">
-                <img src="./img/section4_3.png" alt="coupon" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
-                    </a>
+                    <img src="./img/section4_3.png" alt="coupon" data-aos="fade-down" data-aos-duration="600"
+                        data-aos-delay="200">
+                </a>
             </div>
             <div class="btn" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                 <a href="#">
