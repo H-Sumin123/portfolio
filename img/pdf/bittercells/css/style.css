@@ -5,6 +5,22 @@
     padding: 0;
     box-sizing: border-box;
     cursor: url(../img/cursor.svg), auto;
+    transition: transform 0.3s ease;
+    cursor: none !important;
+}
+
+/* 커스텀 커서 */
+.custom-cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/cursor.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 ul,
@@ -15,6 +31,10 @@ ol {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a * {
+    cursor: url(../img/cursor.svg), pointer;
 }
 
 img {
