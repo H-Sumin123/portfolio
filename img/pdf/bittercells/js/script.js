@@ -8,21 +8,18 @@ window.addEventListener('scroll', function () {
     }
 });
 
-/**
- * 1920px 기준 비율 유지 스케일링 함수 (최소 배율 제한 포함)
- */
 function applyResponsiveScale() {
     const sections = document.querySelectorAll('#section1, #section2, #section3, #section5');
-    const baseWidth = 1920; 
+    const baseWidth = 2560;
     const windowWidth = window.innerWidth;
 
     // 1025px 이상 데스크탑 범위에서 작동
     if (windowWidth >= 1025) {
         let scale = windowWidth / baseWidth;
-        
+
         // [추가] 최소 배율 제한 (0.75 이하로 작아지지 않게 설정)
         // 화면이 1440px 이하로 내려가도 콘텐츠는 1440px일 때의 크기를 유지함
-        const minScale = 0.75; 
+        const minScale = 0.75;
         if (scale < minScale) {
             scale = minScale;
         }
@@ -43,8 +40,8 @@ function applyResponsiveScale() {
 
             const originalHeight = sec.offsetHeight;
             const scaledHeight = originalHeight * scale;
-            
-            sec.style.marginBottom = `-${originalHeight - scaledHeight}px`;
+
+            sec.style.marginBottom = `-${(originalHeight - scaledHeight) + 1}px`;
         });
 
         // 최소 배율 때문에 가로 스크롤이 생길 수 있으므로 바디 설정
@@ -61,8 +58,11 @@ function applyResponsiveScale() {
             sec.style.left = '0';
             sec.style.marginLeft = '0';
             sec.style.transform = 'none';
+            sec.style.margin = '0';
             sec.style.marginBottom = '0';
+            sec.style.marginTop = '0';
         });
+
         document.body.style.overflowX = 'hidden';
     }
 }
@@ -91,7 +91,7 @@ document.addEventListener('mousemove', (e) => {
 const links = document.querySelectorAll('a, button, .btn');
 links.forEach(link => {
     link.addEventListener('mouseenter', () => {
-        cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+        cursor.style.transform = 'translate(-50%, -50%) scale(1.7)';
     });
 
     link.addEventListener('mouseleave', () => {
