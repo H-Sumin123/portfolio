@@ -1005,15 +1005,10 @@ footer .text {
         height: auto !important;
         min-height: 0 !important;
         padding: 0 !important;
-
-        /* 2. section1, 5와 동일한 메커니즘 적용 */
         background-image: url(../img/section2_background.jpg);
         background-repeat: no-repeat;
         background-position: center top;
-        /* 상단을 기준으로 중심 고정 */
         background-size: cover;
-        /* 이미지가 찌그러지지 않고 비율 유지하며 확대됨 */
-
         overflow: visible;
     }
 
@@ -1031,62 +1026,93 @@ footer .text {
 
     #section2 .img1 {
         width: 30%;
-        top: 4%;
+        top: 3%;
     }
 
     #section2 .img2 {
         width: 60%;
-        top: 16%;
+        top: 15%;
     }
 
     #section2 .img3 {
         width: 60%;
-        top: 37%;
+        top: 36%;
     }
 
     #section2 .img4 {
         width: 60%;
-        top: 45%;
+        top: 44%;
         left: 0;
     }
 
     #section2 .img5 {
         width: 60%;
-        top: 56%;
+        top: 55%;
         right: 0;
     }
 
     #section2 .img6 {
         width: 60%;
-        top: 70%;
+        top: 69%;
         left: 10%;
     }
 
     #section2 .img7 {
         width: 58%;
-        top: 88%;
+        top: 86.5%;
         left: 0;
         z-index: 99;
     }
 
     #section2 .img8 {
         width: 90%;
-        top: 79.5%;
+        top: 78.5%;
         left: 10%;
     }
 
-    #section2 .txt1,
-    #section2 .txt2,
-    #section2 .txt3,
-    #section2 .txt4,
-    #section2 .txt5 {
-        display: none;
+    #section2 .txt1 {
+        font-size: 2.8vw;
+        top: 13.1%;
+        right: 0;
     }
 
-    #section2 .line1,
-    #section2 .line2,
+    #section2 .txt2 {
+        font-size: 2vw;
+        top: 30.85%;
+        left: -4%;
+    }
+
+    #section2 .txt3 {
+        font-size: 2.4vw;
+        top: 42.9%;
+        left: 2.9%;
+    }
+
+    #section2 .txt4 {
+        font-size: 2.2vw;
+        top: 53.8%;
+    }
+
+    #section2 .txt5 {
+        font-size: 2.7vw;
+        top: 107%;
+    }
+
+    #section2 .line1 {
+        width: 66%;
+        top: 14.3%;
+        right: 0;
+    }
+
+    #section2 .line2 {
+        width: 33%;
+        top: 44%;
+        left: 3.1%;
+    }
+
     #section2 .line3 {
-        display: none;
+        width: 76%;
+        top: 106.4%;
     }
 
     /* section3 */
