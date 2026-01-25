@@ -900,7 +900,10 @@ footer .text {
 
 /* 모바일 768px 이하 */
 @media screen and (max-width: 768px) {
-
+    .custom-cursor {
+        display: none !important;
+    }
+    
     /* 헤더 */
     header {
         height: 60px;
@@ -1283,5 +1286,6 @@ footer .text {
     }
 
 }
+
 
 
