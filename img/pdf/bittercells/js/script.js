@@ -76,44 +76,24 @@ window.addEventListener('resize', () => {
 window.addEventListener('load', applyResponsiveScale);
 applyResponsiveScale();
 
-// 커스텀 커서 요소 생성
-const cursor = document.createElement('div');
-cursor.className = 'custom-cursor';
-document.body.appendChild(cursor);
+// 더 정확한 터치 기기 판별 (단순히 창 너비가 좁은 PC는 제외됨)
+const isActualTouchDevice = window.matchMedia("(pointer: coarse)").matches;
 
-// 마우스 움직임 추적
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-});
-
-// 링크에 마우스 올렸을 때
-const links = document.querySelectorAll('a, button, .btn');
-links.forEach(link => {
-    link.addEventListener('mouseenter', () => {
-        cursor.style.transform = 'translate(-50%, -50%) scale(1.7)';
-    });
-
-    link.addEventListener('mouseleave', () => {
-        cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-    });
-});
-
-// 터치 기기인지 확인하는 함수
-const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-// 터치 기기가 아닐 때만 커서 생성 및 로직 실행
-if (!isTouchDevice) {
+// 터치 전용 기기가 아닐 때만(즉, 마우스를 쓰는 PC일 때만) 커서 생성
+if (!isActualTouchDevice) {
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
     document.body.appendChild(cursor);
 
     document.addEventListener('mousemove', (e) => {
+        // 커서 위치 업데이트
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
+        // PC에서 창을 줄였을 때도 보이도록 강제 노출
+        cursor.style.display = 'block'; 
     });
 
-    const links = document.querySelectorAll('a, button, .btn');
+    const links = document.querySelectorAll('a, button, .btn, .logo img');
     links.forEach(link => {
         link.addEventListener('mouseenter', () => {
             cursor.style.transform = 'translate(-50%, -50%) scale(1.7)';
@@ -123,4 +103,3 @@ if (!isTouchDevice) {
         });
     });
 }
-
