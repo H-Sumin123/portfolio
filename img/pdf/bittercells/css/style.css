@@ -220,6 +220,7 @@ header {
 }
 
 #section2 .txt3 {
+    font-size: 17px;
     top: 1168px;
     left: 127px;
 }
@@ -230,6 +231,7 @@ header {
 }
 
 #section2 .txt5 {
+    font-size: 19px;
     top: 2273px;
     left: 34px;
 }
@@ -647,9 +649,9 @@ footer .text {
 
     /* 텍스트 위치 */
     #section2 .txt1 {
-        font-size: 1.27vw;
-        top: 15.1%;
-        right: 16.3%;
+        font-size: 1.4vw;
+        top: 15.2%;
+        right: 13%;
     }
 
     #section2 .txt2 {
@@ -660,39 +662,39 @@ footer .text {
     }
 
     #section2 .txt3 {
-        font-size: 10px;
-        top: 55.3%;
+        font-size: 1.3vw;
+        top: 55.7%;
         left: 11.5%;
     }
 
     #section2 .txt4 {
-        font-size: 14px;
+        font-size: 1.1vw;
         top: 58.4%;
         right: 0;
     }
 
     #section2 .txt5 {
-        font-size: 14px;
-        top: 96.8%;
+        font-size: 1.8vw;
+        top: 97.1%;
         left: 2.4%;
     }
 
     /* 라인 */
     #section2 .line1 {
         width: 42%;
-        top: 16.8%;
+        top: 17.1%;
         right: 5.8%;
     }
 
     #section2 .line2 {
         width: 30%;
-        top: 55%;
+        top: 55.3%;
         left: 11.5%;
     }
 
     #section2 .line3 {
         width: 55%;
-        top: 96.3%;
+        top: 96.5%;
         left: 2.5%;
     }
 
@@ -1094,7 +1096,7 @@ footer .text {
     }
 
     #section2 .txt3 {
-        font-size: 2.4vw;
+        font-size: 2.5vw;
         top: 42.9%;
         left: 2.9%;
     }
@@ -1105,25 +1107,25 @@ footer .text {
     }
 
     #section2 .txt5 {
-        font-size: 2.7vw;
-        top: 107%;
+        font-size: 3vw;
+        top: 106.5%;
     }
 
     #section2 .line1 {
         width: 66%;
-        top: 14.3%;
+        top: 14.4%;
         right: 0;
     }
 
     #section2 .line2 {
-        width: 33%;
-        top: 44%;
+        width: 35%;
+        top: 44.1%;
         left: 3.1%;
     }
 
     #section2 .line3 {
-        width: 76%;
-        top: 106.4%;
+        width: 80%;
+        top: 106.2%;
     }
 
     /* section3 */
