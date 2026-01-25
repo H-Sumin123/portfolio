@@ -900,10 +900,6 @@ footer .text {
 
 /* 모바일 768px 이하 */
 @media screen and (max-width: 768px) {
-    .custom-cursor {
-        display: none !important;
-    }
-    
     /* 헤더 */
     header {
         height: 60px;
@@ -1145,6 +1141,7 @@ footer .text {
 
     #section3 .price {
         font-size: 12px;
+        margin-top: 0;
     }
 
     /* section4 */
@@ -1284,8 +1281,4 @@ footer .text {
         text-align: center;
         padding: 20px 0;
     }
-
 }
-
-
-
