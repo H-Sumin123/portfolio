@@ -214,7 +214,7 @@ header {
 
 #section2 .txt2 {
     font-size: 12px;
-    top: 812px;
+    top: 811px;
     left: -91px;
     transform: rotate(-90deg);
 }
@@ -226,7 +226,7 @@ header {
 }
 
 #section2 .txt4 {
-    top: 1242px;
+    top: 1250px;
     right: 0;
 }
 
@@ -241,7 +241,7 @@ header {
     width: 550px;
     height: 2px;
     background-color: #fff;
-    top: 298px;
+    top: 301px;
     right: 130px;
 }
 
@@ -656,7 +656,7 @@ footer .text {
 
     #section2 .txt2 {
         font-size: 1vw;
-        top: 37.7%;
+        top: 37.51%;
         left: -9.3%;
         transform: rotate(-90deg);
     }
@@ -669,13 +669,13 @@ footer .text {
 
     #section2 .txt4 {
         font-size: 1.1vw;
-        top: 58.4%;
+        top: 58.7%;
         right: 0;
     }
 
     #section2 .txt5 {
         font-size: 1.8vw;
-        top: 97.1%;
+        top: 97.3%;
         left: 2.4%;
     }
 
@@ -1091,7 +1091,7 @@ footer .text {
 
     #section2 .txt2 {
         font-size: 2vw;
-        top: 30.85%;
+        top: 30.55%;
         left: -4%;
     }
 
