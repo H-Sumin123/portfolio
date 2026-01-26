@@ -123,11 +123,12 @@
             </div>
             <div class="img1">
                 <a href="#">
-                    <img src="./img/section4_1.png" alt="coupon" class="coupon" data-aos="fade-down" data-aos-duration="600">
+                    <img src="./img/section4_1.png" alt="coupon" class="coupon" data-aos="fade-down"
+                        data-aos-duration="600">
                 </a>
                 <a href="#">
-                    <img src="./img/section4_2.png" alt="coupon" class="coupon" data-aos="fade-down" data-aos-duration="600"
-                        data-aos-delay="100">
+                    <img src="./img/section4_2.png" alt="coupon" class="coupon" data-aos="fade-down"
+                        data-aos-duration="600" data-aos-delay="100">
                 </a>
             </div>
             <div class="img2">
@@ -136,8 +137,8 @@
             </div>
             <div class="img3">
                 <a href="#">
-                    <img src="./img/section4_3.png" alt="coupon" class="coupon" data-aos="fade-down" data-aos-duration="600"
-                        data-aos-delay="200">
+                    <img src="./img/section4_3.png" alt="coupon" class="coupon" data-aos="fade-down"
+                        data-aos-duration="600" data-aos-delay="200">
                 </a>
             </div>
             <div class="btn" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
@@ -181,12 +182,14 @@
     <!-- aos 적용하기 -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-        offset: -200,  // 음수로 설정하면 더 일찍 트리거
-        once: false,
-        duration: 800,
-        anchorPlacement: 'top-bottom',
-    });
+        window.addEventListener('load', function () {
+            AOS.init({
+                offset: -200,
+                once: false,
+                duration: 800,
+                anchorPlacement: 'top-bottom',
+            });
+        });
     </script>
 </body>
 
